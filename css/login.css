@@ -1,0 +1,260 @@
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .wrapp {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #24C6DC; 
+    background: -webkit-linear-gradient(to bottom, #514A9D, #24C6DC);  
+    background: linear-gradient(to bottom, #151c43, #9d0b35f0);
+  }
+  
+  .box div {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid rgba(255,255,255,0.8);
+  }
+  
+  .box div:nth-child(1) {
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+  }
+  
+  .box div:nth-child(2) {
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+  }
+  .box div:nth-child(3) {
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+  }
+  
+  .box div:nth-child(4) {
+    top: 20%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+  }
+  
+  .box div:nth-child(5) {
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+  }
+  
+  .box div:nth-child(6) {
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+  }
+  
+  .box div:nth-child(7) {
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+  }
+  
+  .box div:nth-child(8) {
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+  }
+  
+  .box div:nth-child(9) {
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+  }
+  
+  .box div:nth-child(10) {
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: scale(0) translateY(-90px) rotate(360deg);
+      opacity: 1;
+    }
+    
+    100% {
+      transform: scale(1.3) translateY(-90px) rotate(-180deg);
+      border-radius: 50%;
+      opacity: 0;
+    }
+  }
+        .login-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        background: rgba(0,0,0,.5);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
+      }
+      
+      .login-box h2 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+      }
+      
+      .login-box .user-box {
+        position: relative;
+      }
+      
+      .login-box .user-box input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #e7afb7;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #e7afb7;
+        outline: none;
+        background: transparent;
+      }
+      .login-box .user-box label {
+        position: absolute;
+        top:0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #e7afb7;
+        pointer-events: none;
+        transition: .5s;
+      }
+      
+      .login-box .user-box input:focus ~ label,
+      .login-box .user-box input:valid ~ label {
+        top: -20px;
+        left: 0;
+        color: #e7afb7;
+        font-size: 12px;
+      }
+      
+      .login-box form .login-btn {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #e7afb7;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 40px;
+        margin-left: 98px;
+        letter-spacing: 4px;
+        cursor: pointer;
+      }
+      
+      .login-box .login-btn:hover {
+        background: #e7afb7;
+        color: #000;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #e7afb7,
+                    0 0 25px #e7afb7,
+                    0 0 50px #e7afb7,
+                    0 0 100px #e7afb7;
+      }
+      
+      .login-box .login-btn span {
+        position: absolute;
+        display: block;
+      }
+      
+      .login-box .login-btn span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #e7afb7);
+        animation: btn-anim1 1s linear infinite;
+      }
+      
+      @keyframes btn-anim1 {
+        0% {
+          left: -100%;
+        }
+        50%,100% {
+          left: 100%;
+        }
+      }
+      
+      .login-box .login-btn span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #e7afb7);
+        animation: btn-anim2 1s linear infinite;
+        animation-delay: .25s
+      }
+      
+      @keyframes btn-anim2 {
+        0% {
+          top: -100%;
+        }
+        50%,100% {
+          top: 100%;
+        }
+      }
+      
+      .login-box .login-btn span:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, #e7afb7);
+        animation: btn-anim3 1s linear infinite;
+        animation-delay: .5s
+      }
+      
+      @keyframes btn-anim3 {
+        0% {
+          right: -100%;
+        }
+        50%,100% {
+          right: 100%;
+        }
+      }
+      
+      .login-box .login-btn span:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #e7afb7);
+        animation: btn-anim4 1s linear infinite;
+        animation-delay: .75s
+      }
+      
+      @keyframes btn-anim4 {
+        0% {
+          bottom: -100%;
+        }
+        50%,100% {
+          bottom: 100%;
+        }
+      }
+        
+      
+        button{
+          border-width: 0px;
+          background-color: transparent;
+        }

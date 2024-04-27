@@ -1,0 +1,34 @@
+html * {
+    box-sizing: border-box;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .upload__box .upload__inputfile {
+      padding: 40px;
+      width: .1px;
+      height: .1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+    
+    
+    
+    .upload__img-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+      }
+      
+  
+  .img-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 100%;
+  }
